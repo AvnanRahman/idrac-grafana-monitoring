@@ -1,0 +1,16 @@
+scrape_configs:
+  - job_name: 'idrac-snmp'
+    metrics_path: /snmp
+    params:
+      module: [dell_idrac]  # nama modul di snmp.yml
+    static_configs:
+      - targets:
+          - 10.1.128.10  # iDRAC server 1
+          - 10.1.128.11  # iDRAC server 2
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: snmp-exporter.monitoring.svc.cluster.local:9116  # service name di K8s
