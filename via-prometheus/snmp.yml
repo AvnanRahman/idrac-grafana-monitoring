@@ -3059,4 +3059,4 @@ dell_idrac:
   retries: 3
   timeout: 30s
   auth:
-    community: !SNMP-COMMUNITY!
+    community: public

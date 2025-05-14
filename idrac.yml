@@ -1,0 +1,263 @@
+# This is a sample configuration file for the iDRAC exporter,
+# including default values and equivalent environment variables.
+# The environment variables take precedence over the values in
+# the configuration file.
+
+# Listen address
+# Default value: 0.0.0.0
+# Environment variable CONFIG_ADDRESS=0.0.0.0
+address: 0.0.0.0
+
+# Listen port
+# Default value: 9348
+# Environment variable CONFIG_PORT=9348
+port: 9348
+
+# HTTP timeout in seconds for Redfish API calls
+# Default value: 10
+# Environment variable CONFIG_TIMEOUT=10
+timeout: 20
+
+# Prefix for the exported metrics
+# Default value: idrac
+# Environment variable CONFIG_METRICS_PREFIX=idrac
+metrics_prefix: idrac
+
+# Enable the use of an https proxy for all requests
+# Environment variable: HTTPS_PROXY=http://localhost:8888
+# https_proxy: http://localhost:8888
+
+# The TLS section is used to enable HTTPS for the exporter. To enable TLS you
+# need a PEM encoded certificate and private key. The public certificate must
+# include the entire chain of trust.
+# TLS can also be configured using the corresponding environment variables.
+tls:
+  enabled: false  # CONFIG_TLS_ENABLED=false
+  cert_file: ""   # CONFIG_TLS_CERT_FILE=
+  key_file: ""    # CONFIG_TLS_KEY_FILE=
+
+# The hosts section is used to define login information for the different targets.
+# Hosts can be referenced either via their IP address or their hostname, as long
+# as it matches the "target" parameter when scraping metrics.
+#
+# When the "target" does not match any host, the exporter will attempt to use the
+# login information under "default".
+#
+# The default username and password can be configured using the two environment
+# variables CONFIG_DEFAULT_USERNAME and CONFIG_DEFAULT_PASSWORD
+hosts:
+  default:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.11:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.12:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.13:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.14:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.15:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.16:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.17:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.18:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.19:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.20:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.21:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.22:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.23:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.24:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.25:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.26:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.27:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.28:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.29:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.30:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.31:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.32:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.33:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.34:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.35:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.36:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.37:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.38:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.39:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.40:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.41:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.42:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.43:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.44:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.45:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.46:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.47:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.48:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.49:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.50:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.51:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.52:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.53:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.54:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.55:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.56:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.57:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.58:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.59:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.60:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.61:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.62:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.63:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.64:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.65:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.66:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.67:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.68:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.69:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.70:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.71:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.72:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.73:
+    username: root
+    password: Dellsvcs1!
+  10.1.128.74:
+    username: root
+    password: Dellsvcs1!
+
+# The metrics section is used to select different groups of metrics.
+# See the README file for a detailed list of metrics in each group.
+# Each section can also be enabled using an environment variable.
+metrics:
+  system: true    # CONFIG_METRICS_SYSTEM=true
+  sensors: true   # CONFIG_METRICS_SENSORS=true
+  power: false    # CONFIG_METRICS_POWER=false
+  events: false   # CONFIG_METRICS_EVENTS=false
+  storage: false  # CONFIG_METRICS_STORAGE=false
+  memory: false   # CONFIG_METRICS_MEMORY=false
+  network: false  # CONFIG_METRICS_NETWORK=false
+  oem: false      # CONFIG_METRICS_OEM=false
+
+# The events section is used for filtering events when the "events" metrics group
+# is enabled. Events can be filtered based on minimum severity and maximum age.
+# Severity must be one of "ok", "warning", "critical"
+events:
+  severity: warning  # CONFIG_EVENTS_SEVERITY=warning
+  maxage: 7d         # CONFIG_EVENTS_MAXAGE=7d

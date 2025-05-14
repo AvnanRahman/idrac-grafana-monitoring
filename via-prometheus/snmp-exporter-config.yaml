@@ -3814,9 +3814,9 @@ data:
       retries: 3
       timeout: 30s
       auth:
-        community: !SNMP-COMMUNITY!
+        community: public
 kind: ConfigMap
 metadata:
   creationTimestamp: null
   name: snmp-exporter-config
-  namespace: default
+  namespace: monitoring

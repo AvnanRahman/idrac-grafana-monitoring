@@ -20,7 +20,7 @@ spec:
         - containerPort: 9116
         volumeMounts:
         - name: snmp-config-volume
-          mountPath: /etc/snmp-exporter
+          mountPath: /etc/snmp_exporter
           readOnly: true
       volumes:
       - name: snmp-config-volume
