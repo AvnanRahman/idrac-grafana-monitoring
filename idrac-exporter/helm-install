@@ -1,0 +1,8 @@
+# Install Via Helm
+
+helm repo add idrac-exporter 
+helm install idrac-exporter idrac-exporter/idrac-exporter -n monitoring
+
+
+# Source
+https://github.com/mrlhansen/idrac_exporter

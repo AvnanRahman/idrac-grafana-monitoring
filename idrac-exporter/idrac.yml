@@ -248,12 +248,12 @@ hosts:
 metrics:
   system: true    # CONFIG_METRICS_SYSTEM=true
   sensors: true   # CONFIG_METRICS_SENSORS=true
-  power: false    # CONFIG_METRICS_POWER=false
-  events: false   # CONFIG_METRICS_EVENTS=false
-  storage: false  # CONFIG_METRICS_STORAGE=false
-  memory: false   # CONFIG_METRICS_MEMORY=false
-  network: false  # CONFIG_METRICS_NETWORK=false
-  oem: false      # CONFIG_METRICS_OEM=false
+  power: true    # CONFIG_METRICS_POWER=false
+  events: true   # CONFIG_METRICS_EVENTS=false
+  storage: true  # CONFIG_METRICS_STORAGE=false
+  memory: true   # CONFIG_METRICS_MEMORY=false
+  network: true  # CONFIG_METRICS_NETWORK=false
+  oem: true      # CONFIG_METRICS_OEM=false
 
 # The events section is used for filtering events when the "events" metrics group
 # is enabled. Events can be filtered based on minimum severity and maximum age.
